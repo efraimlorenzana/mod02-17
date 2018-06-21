@@ -2,6 +2,19 @@
  @media only screen and (min-width: 961px){
 /*
  *
+ * General Rules
+ *
+ */
+
+
+
+
+ 	header.row > div#head > div.row > div.left > div#title {
+ 	display: inline-block;
+ 	padding-left: 15px;
+ }
+/*
+ *
  * Custom CSS Fluid Grid System
  *
  */

@@ -23,6 +23,15 @@
     font-size: 54px;
     font-family: 'Encode Sans Semi Expanded', sans-serif;
  }
+ h2 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+ }
+ p, strong {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: justify;
+}
  
 /*
  *
@@ -61,11 +70,6 @@
  	background-color: #00000080;
  }
 
- header.row > div#head > div.row > div.left > div#title {
- 	display: inline-block;
- 	padding-left: 15px;
- }
-
  div.logo > i {
  	line-height: 41px;
     font-size: 30px;
@@ -92,7 +96,7 @@
  *
  */
  main {
- 	background-color: #1212139c;
+ 	background-color: #060606db;
  	/*padding: 20px;*/
  }
  main > div#mainnav {
@@ -117,32 +121,86 @@
 
  main > div#carousel {
     width: 100%;
-    padding: 23px;
+    padding: 12px;
  }
  main > div#carousel > img {
     border: 2px solid white;
     width: 100%;
  	position: relative;
  }
- main > div#carousel > div {
+ /*main > div#carousel > div {
     position: absolute;
     bottom: 22px;
     background-color: #decece3d;
     width: 77.4%;
     padding: 25px;
- }
+ }*/
 
  main > div#content {
- 	height: 20vh;
-    margin: 20px;
+ 	min-height: 20vh;
+    margin: 10px;
+    padding-bottom: 20px;
  }
-
+ 
+ /*---------- Left Content ----------*/
  main > div#content > div.left {
  	/*background-color: yellow;*/
  }
-
+ main > div#content > div.left > div.data > p {
+    margin-bottom: 10px;
+ }
+ main > div#content > div.left > div.data > p > strong {
+    color:lightgreen;
+ }
+ main > div#content > div.left > div.data > div.thumbnail > img {
+    width: 100%;
+    height: 100%;
+ }
+ 
+ /*---------- Right Content ----------*/
  main > div#content > div.right {
- 	/*background-color: orange;*/
+ 	padding-left:15px;
+ }
+
+ div#content > div.right > form {
+    position: relative;
+ }
+
+ input[id="search"] {
+    background-color: #2b2828;
+    border: 0.5px solid #585656;
+    padding: 5px;
+    width: 100%;
+    color: #eae6e6;
+ }
+
+ div#content > div.right > form > i {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    line-height: 2;
+    font-size: small;
+ }
+
+ div#content > div.right > form > div.badge > img {
+    width: 100px;
+    float: left;
+    margin: 10px;
+ }
+
+ div#content > div.right > form > div.badge > div {
+    padding: 10px;
+ }
+ div#content > div.right > form > div.badge > div > button:last-child {
+    float:right;
+ }
+ div#content > div.right > form > div.badge > div:last-child {
+    background-color: white;
+ }
+ div#content > div.right > form > div.badge > div > input {
+    width: 100%;
+    height: 50px;
+    word-break: break-word;
  }
  /*----------  Classes ----------*/
  .row:after {
@@ -171,6 +229,50 @@
 }
  .logo-red {
  	background-color: red;
+ }
+
+ .data {
+    padding: 10px 23px 10px 10px;
+    background-color: #2b2828;
+    border: 0.5px solid #585656;
+    margin-bottom: 15px;
+ }
+
+ .thumbnail {
+    width: 200px;
+    padding: 5px;
+    background-color: #423e3e;
+    float: left;
+    margin-right: 10px;
+ }
+
+ .badge {
+    background-color: blue;
+    margin: 15px 0;
+    /*padding: 10px;*/
+    background-image: url("../img/bg/bg1.jpg");
+    background-size: cover;
+    color: black;
+ }
+
+ .btn {
+    background-color: #484747;
+    padding: 5px 10px;
+    font-size: small;
+    font-weight: bold;
+    float:right;
+    border: none;
+    color:white;
+    margin-top: 10px;
+ }
+ .btn-hover:hover {
+    background-color: red;
+ }
+
+ .btn-primary {
+    padding: 5px;
+    border-radius: 3px;
+    border:none;
  }
 
 /*
